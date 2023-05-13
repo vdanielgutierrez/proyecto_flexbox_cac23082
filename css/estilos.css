@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    height: 100vh;
+}
+
+/*Navegacion*/
+.contenedorNav{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(69, 69, 69);
+    padding:1.2rem 5rem;
+    height: 12%;
+}
+.contenedorLogo{
+    width: 25%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorLogo img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.contenedorLogo h2{
+    color:white;
+}
+.navegacion ul{
+    height: 100%;/*la navegacion es el padre*/
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+
+.linkNav1{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(241, 232, 232);   
+}
+
+.linkNav2{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(195, 190, 190);
+   
+}
+
+.linkNav3{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(55, 152, 55);
+}
+
+/*Conferecias*/
+
+.contenedorConferencia{
+    background:linear-gradient(to right, #3c3a3a45,#514c4c87 ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.hijoConferencia{
+    padding-right: 5rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+
+.hijoConferencia h1{
+    color:white;
+    text-align: right;   
+}
+
+.textoConferencia{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;/*negrita*/
+    color:white;
+    text-align: right;
+}
+
+
+.opcionesConfe{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btnConferencia1{
+    border: 1px solid rgb(239, 235, 235);
+    border-radius: 5px;
+    margin: 10px;
+    padding:3px;
+    text-decoration: none;
+    color:rgb(241, 232, 232)
+}
+
+
+
+.btnConferencia2{
+    background-color: rgb(4, 143, 31);
+    border-radius: 5px;
+    margin: 10px;
+    padding:3px;
+    text-decoration: none;
+    color:rgb(241, 232, 232)
+}
+
+/* Oradores */
+
+.tituloOradores{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1%;
+
+}
+
+
+.tex1{
+    color:rgb(19, 18, 18);
+    font-size: 60%;
+    padding-left: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    padding: 30px;
+
+}
+
+.tex2{
+    color:rgb(9, 9, 9);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 80;
+    font-weight: 500;
+    font-size: 33px;
+}
+
+
+.padreCards{
+    display: flex;
+    justify-content:space-around;
+    margin-top:50px;
+    text-align: left;
+    width: 80%;
+    height:auto;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.card{
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height:75%;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+
+}
+
+.cardBody{
+    margin:15px;    
+}
+
+
+
+
+.card img{
+    width:100%;
+    height: 60%;
+    object-fit: cover;  
+}
+
+.tipo{
+    display: flex;
+    margin: 10px auto;
+    justify-content:flex-start;
+}
+
+.java{
+    background-color:rgb(229, 216, 38);
+    margin: 0 15px 0 0;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+
+.react{
+    background-color:rgb(74, 170, 202);
+    margin: 0 15px 0 0;
+    padding: 5px;
+    border-radius: 10%;
+    color:rgb(248, 245, 245)   
+}
+
+.negocios{
+    background-color:rgb(137, 137, 136);
+    margin: 0 15px 0 0;
+    padding: 5px;
+    border-radius: 10%;
+    color: azure;
+}
+
+
+.startups{
+    background-color:rgb(235, 71, 42);
+    margin: 0 15px 0 0;
+    padding: 5px;
+    border-radius: 10%;
+    color:azure;   
+}
+
+/* Lugar y Fecha */
+
+.contenedorLugarFecha{
+    display: flex;
+    width: 100%;
+    height:auto;
+    margin-left: 1px;
+}
+
+.hijoLugarFecha{
+    display: inline-block;
+    width:50%;
+}
+
+.hijoLugarFecha img{
+    width:100%;
+    height: 70vh;
+    object-fit: cover;
+    border: 1px white solid;  
+}
+
+.bsAs{
+    height: 70vh;
+    color: white;
+    padding: 10px 10px 0 10px;
+    background-color: #504650;
+    border: 1px white solid;
+    width:50%;
+}
+
+.textoLugar{
+    font-size:0.8rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color:rgb(237, 232, 232);
+    text-align:left;
+    padding: 20px 0 20px 0px;
+}
+
+.conMas{
+    border:1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:rgb(241, 232, 232)
+}
+
+/* Oradores */
+
+.tituloConvOradores{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1%;
+}
+
+.tex3{
+    color:rgb(19, 18, 18);
+    font-size: 60%;
+    padding-left: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.tex4{
+    color:rgb(9, 9, 9);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 80;
+    font-weight: 500;
+    font-size: 33px;
+    padding: 15px;
+}
+
+.tex5{
+    color:rgb(19, 18, 18);
+    font-size: 85%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 3px ;
+}
+
+.punta{
+    text-decoration:underline;
+    text-decoration-style: dotted;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.input{
+    padding: 10px;
+    
+}
+
+.inputTexto{
+    width: 300px;
+    height: 30px;
+    padding: 0px 0px 0px 14px;
+}
+
+.textoTexarea{
+    padding: 15px 0px 0px 14px;
+    font-size: 20px;
+}
+
+.formulario .textoR{
+    color:rgb(19, 18, 18);
+    font-size: 80%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 22rem;
+    padding-bottom: 15px ;
+}
+
+.enviar{
+    background-color:rgb(89, 180, 48);
+    color: whitesmoke;
+    font-size: 110%;
+    padding: 7px 278px;
+    border: transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+.sectorFooter{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,21,33,0.8913690476190477) 70%, rgba(39,86,99,1) 100%, rgba(0,212,255,1) 100%);
+    padding: 30px;
+
+}
+
+.sectorFooter .aclasFooter a{
+    text-decoration: none;
+    padding-left:  60px;
+    font-size: 1rem;
+    font-weight: 300rem;
+    color: rgb(241, 232, 232);  
+}
+    
+.sectorFooter .aclasFooter .text6{
+    position: relative;
+    width: 10px;
+    top:10px;
+    display: inline-block;
+    padding-right: 10%;
+}
+
+
+
+/*breakpoint para celular de 0 a 768px*/
+@media screen and (max-width: 767px)   {
+    .contenedorNav{
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        margin-bottom: 1px;
+
+    }
+    .navegacion .listaNav{
+        flex-direction: column;
+    }
+
+/* Conferencia */
+    .contenedorConferencia .hijoConferencia{
+        flex-direction: column;
+        height: initial;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorConferencia .hijoConferencia h1{
+        height: initial;
+        text-align: right;
+        padding: 10%;
+        font-size:190%;
+    }
+
+    .contenedorConferencia .hijoConferencia p{
+        text-align: center;
+        padding-left: 30%;  
+    }
+    .contenedorConferencia .hijoConferencia .opcionesConfe{
+        height: initial;
+        width: initial;
+        padding: 85px;
+        white-space: nowrap;
+        margin-left: 90%;
+    }
+
+    .contenedorConferencia .hijoConferencia .opcionesConfe .btnConferencia1{
+        height: initial;
+        width: initial;
+        justify-content: center;
+        padding: 10px;
+
+    }
+    .contenedorConferencia .hijoConferencia .opcionesConfe .btnConferencia2{
+        justify-content: center;
+        height: initial;
+        width: initial;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Oradores */
+
+    .sectionOradores{
+        height: initial;
+        padding-top: 25%;
+    }
+    .sectionOradores .padreCards{
+        flex-direction: column;
+        height: initial;
+        width: initial;
+        width: 300%;
+        height:auto;
+
+    }
+    .sectionOradores .padreCards .card{
+        margin-bottom: 2vh;
+    }  
+    
+    /* Lugar y fecha */
+
+    .contenedorLugarFecha{
+        flex-direction: column;
+        height: initial;
+        width: auto;
+        height: auto;
+    }   
+    
+    .hijoLugarFecha{
+        display: inline-block;
+        width: 200%;
+    }
+
+    .hijoLugarFecha img{
+        height: initial;
+        width:50%;
+        height: auto;
+        object-fit: cover;      
+    }
+
+    .bsAs{
+        height: initial; 
+        height: auto;
+        width:100%;
+        color: white;
+        padding: 10px 10px 30px 10px;
+        background-color: #504650;
+    }
+    
+    .inputTexto{
+        display: block;
+    }
+
+    .textoTexarea{
+        height: initial;
+        width: initial;
+        width: 95%;
+        height: 100%;
+        margin-left: 15px;
+    }
+
+    /* formulario */
+
+    .formulario .textoR{
+        text-align: center;
+        padding-right: 1rem;
+        padding-bottom: 15px ;
+    }
+
+    .enviar{
+        background-color:rgb(89, 180, 48);
+        color: whitesmoke;
+        font-size: 110%;
+        padding: 7px 50px;
+        border: transparent;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+
+    .sectorFooter .aclasFooter a{
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        padding-left:  initial;
+        width: initial;
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+
+    }
+    .sectorFooter .aclasFooter .text6{
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        padding-left:  initial;
+        width: initial;
+        padding-left: 15%;
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 1rem;        
+    }
+
+}
+
+
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /*se cargaron los estilos dentro de las llaves*/
+    .contenedorNav{
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/*notebook*/
+@media screen and (min-width:1024px) and (max-width: 1400px) {
+    .contenedorNav{
+        background-color: rgb(69, 69, 69);
+    }
+
+}
+
+@media screen and (min-width:1401px) {
+    
+}
+
+
+
+
